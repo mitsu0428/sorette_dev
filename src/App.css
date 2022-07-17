@@ -1,25 +1,10 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
+/* START commonCSS */
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   color: white;
-  width: 100%;
-}
-
-.container-thumbnail {
-  width: 100%;
-}
-
-.container-thumbnail img {
   width: 100%;
 }
 
@@ -39,33 +24,9 @@ nav ul li a:hover {
   color: #314a8d;
 }
 
-.App h1 {
-  font-size: 1rem;
-}
-
 hr {
   margin-top: 20px;
   margin-bottom: 0;
-}
-
-.displayPosts .post {
-  margin-top: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 20px 30px;
-  border-radius: 10px;
-  min-width: 500px;
-  background-color: white;
-}
-
-.displayPosts .postName {
-  font-size: 30px;
-  margin-top: 6px;
-}
-
-.displayPosts .postContent {
-  margin-top: -10px;
-  font-size: 15px;
-  font-weight: 400;
 }
 
 input {
@@ -87,3 +48,48 @@ button {
   color: white;
   cursor: pointer;
 }
+/* END commonCSS */
+
+/* START APP.js */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App h1 {
+  font-size: 1rem;
+}
+
+.displayPosts .post {
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 30px;
+  border-radius: 10px;
+  min-width: 500px;
+  background-color: white;
+}
+
+.displayPosts .postName {
+  font-size: 30px;
+  margin-top: 6px;
+}
+
+.displayPosts .postContent {
+  margin-top: -10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+/* END APP.js */
+
+/* START TopPageThumb.js */
+.container-thumbnail {
+  width: 100%;
+}
+
+.container-thumbnail img {
+  width: 100%;
+}
+/* END TopPageThumb.js */
