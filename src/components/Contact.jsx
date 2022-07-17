@@ -15,7 +15,6 @@ const sorette = gql`
 `;
 
 const Contact = () => {
-  // console.log(useQuery(sorette))
   const { data, loading, error } = useQuery(sorette);
 
   if (loading) return "Loading Now...";

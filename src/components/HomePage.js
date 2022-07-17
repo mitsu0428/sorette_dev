@@ -28,7 +28,7 @@ const HomePage = () => {
       <div className="App">
         <div>
           <h1>
-            Sorette Page
+            今週のSoretteをPick!
           </h1>
         </div>
         <div className="addPost">
@@ -49,16 +49,17 @@ const HomePage = () => {
           </button>
           <hr />
         </div>
-        <div className="displayPosts"></div>
+        <div>
           {postList.map((post) => (
             <div key={post.id} className="post">
-              <h1 className="postName">{post.name}</h1>
+              <h1>{post.name}</h1>
               <h1 className="postContent">{post.content}</h1>
               <button onClick={() => dispatch(deletePost({ id: post.id }))}>
                 Delete
               </button>
             </div>
           ))}
+        </div>
       </div>
   )
 }
