@@ -8,7 +8,6 @@ const HomePage = () => {
   const [content, setContent] = useState("");
 
   const postList = useSelector((state) => state.posts.value);
-//   console.log(postList);
 
   const dispatch = useDispatch();
 
