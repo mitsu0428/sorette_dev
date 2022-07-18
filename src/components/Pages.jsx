@@ -16,7 +16,6 @@ const Pages = () => {
       const postData = collection(db, "sorette_id");
       const q = query(postData, orderBy("timestamp", "desc"));
       getDocs(q).then((snapShot) => {
-        // console.log(snapShot.docs);
         setPosts(snapShot.docs.map((doc) => ({ ...doc.data() })));
       });
   
