@@ -13,7 +13,7 @@ const Pages = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-      const postData = collection(db, "posts");
+      const postData = collection(db, "sorette_id");
       const q = query(postData, orderBy("timestamp", "desc"));
       getDocs(q).then((snapShot) => {
         // console.log(snapShot.docs);
